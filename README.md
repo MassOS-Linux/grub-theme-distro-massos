@@ -1,6 +1,13 @@
 # grub-theme-distro-massos
 MassOS variant of distro-grub-themes.
 
+# WARNING
+You cannot use this theme, or any other GRUB theme, when UEFI Secure Boot is enabled. This is because the UEFI Secure Boot policy blocks GRUB from being able to load modules, themes, fonts, images, etc. from any physical disk (it can only load assets that are built into the GRUB binary itself).
+
+So please **disable UEFI Secure Boot** before attempting to use this theme. More information can be found in the [UEFI Secure Boot](https://github.com/MassOS-Linux/MassOS/wiki/UEFI-Secure-Boot) article in the MassOS documentation.
+
+# Information
+
 This is a custom variant of the [distro-grub-themes](https://github.com/AdisonCavani/distro-grub-themes) project, for the MassOS operating system.
 
 Each "distro" has its own theme in this project, but they all follow a common style. The MassOS variant aims to replicate this as closely as possible, but also incorporates a few fixes/extras, including the following:
